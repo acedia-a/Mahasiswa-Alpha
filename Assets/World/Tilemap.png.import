@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbhvee3u3xov1"
-path="res://.godot/imported/walk.png-6127c5c355d57977c95e45ea6cb995aa.ctex"
+uid="uid://bi68wvpcabjp8"
+path="res://.godot/imported/Tilemap.png-cedce97113431f22ab41570ccd28d8bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Character/Bahar/walk.png"
-dest_files=["res://.godot/imported/walk.png-6127c5c355d57977c95e45ea6cb995aa.ctex"]
+source_file="res://Assets/World/Tilemap.png"
+dest_files=["res://.godot/imported/Tilemap.png-cedce97113431f22ab41570ccd28d8bf.ctex"]
 
 [params]
 
