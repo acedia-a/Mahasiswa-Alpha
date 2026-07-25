@@ -34,8 +34,8 @@ func change_map(map_name: String, spawn_name: String):
 
 	await get_tree().process_frame
 
-	var spawn = current_map.get_node("SpawnPoints/" + spawn_name)
-
+	var spawn = current_map.get_node("YSort/SpawnPoints/" + spawn_name)
+	
 	player.reparent(current_map.get_node("YSort"))
 
 	player.global_position = spawn.global_position
