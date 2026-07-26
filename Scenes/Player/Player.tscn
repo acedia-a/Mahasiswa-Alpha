@@ -314,17 +314,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h54ih"]
-size = Vector2(20, 11)
+size = Vector2(18, 6.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=1490220398]
 script = ExtResource("1_mxepk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1603911374]
+scale = Vector2(0.7, 0.7)
 sprite_frames = SubResource("SpriteFrames_84o1a")
 animation = &"left_walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=125421791]
-position = Vector2(-1, 23.5)
+position = Vector2(0, 19.25)
 shape = SubResource("RectangleShape2D_h54ih")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=791439854]
