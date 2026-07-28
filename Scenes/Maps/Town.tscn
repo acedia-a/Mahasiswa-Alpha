@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cjcmvfppfuitw"]
 
 [ext_resource type="TileSet" uid="uid://dj14lt5ty6lha" path="res://Assets/new_tile_set.tres" id="1_d4fb7"]
+[ext_resource type="PackedScene" uid="uid://dhw2qnjn1242m" path="res://Scenes/Object/Doors.tscn" id="2_17q6d"]
 
 [node name="Town" type="Node2D" unique_id=303328582]
 position = Vector2(64, 4)
@@ -30,6 +31,13 @@ tile_set = ExtResource("1_d4fb7")
 [node name="YSort" type="Node2D" parent="." unique_id=1212975531]
 y_sort_enabled = true
 texture_filter = 1
+
+[node name="Doors" type="Node2D" parent="YSort" unique_id=570326192]
+
+[node name="Doors" parent="YSort/Doors" unique_id=1604943215 instance=ExtResource("2_17q6d")]
+position = Vector2(735, 254)
+target_map = "cafe"
+target_spawn = "Entrance"
 
 [node name="SpawnPoints" type="Node2D" parent="YSort" unique_id=1275322865]
 position = Vector2(-12, 32)

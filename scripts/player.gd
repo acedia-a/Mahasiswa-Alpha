@@ -16,9 +16,48 @@ var facing_direction: Vector2 = Vector2.DOWN
 var move_direction: Vector2 = Vector2.ZERO
 
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+@onready var interact_area: Area2D = $Area2D
+
+var nearby_interactables: Array[Area2D] = []
+
+
+func _ready() -> void:
+	interact_area.area_entered.connect(_on_interact_area_entered)
+	interact_area.area_exited.connect(_on_interact_area_exited)
+
+
+func _on_interact_area_entered(area: Area2D) -> void:
+	if area is Interactable:
+		nearby_interactables.append(area)
+
+
+func _on_interact_area_exited(area: Area2D) -> void:
+	nearby_interactables.erase(area)
+
+
+func get_closest_interactable() -> Area2D:
+	var closest: Area2D = null
+	var min_dist: float = INF
+	for area: Area2D in nearby_interactables:
+		var dist: float = global_position.distance_squared_to(area.global_position)
+		if dist < min_dist:
+			min_dist = dist
+			closest = area
+	return closest
+
+
+func interact() -> void:
+	if state == State.CUTSCENE:
+		return
+
+	var target: Area2D = get_closest_interactable()
+	if target:
+		target.interact()
 
 
 func _physics_process(_delta):
+	if Input.is_action_just_pressed("interact"):
+		interact()
 
 	if state == State.CUTSCENE:
 		return

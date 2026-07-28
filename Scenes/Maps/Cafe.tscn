@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://i7aebm3g2cpe"]
 
 [node name="Cafe" type="Node2D" unique_id=1242545865]
+
+[node name="SpawnPoints" type="Node2D" parent="." unique_id=1686934621]
+
+[node name="Entrance" type="Marker2D" parent="SpawnPoints" unique_id=1648946264]

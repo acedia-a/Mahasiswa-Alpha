@@ -321,6 +321,8 @@ size = Vector2(47, 45.25)
 
 [node name="Player" type="CharacterBody2D" unique_id=1490220398]
 script = ExtResource("1_mxepk")
+walk_speed = null
+run_speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=125421791]
 position = Vector2(0, 19.25)
