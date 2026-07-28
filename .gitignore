@@ -17,6 +17,7 @@ mono_crash.*.json
 
 # Mengabaikan seluruh folder Ziva AI di dalam addons/
 addons/ziva_ai/
+addons/ziva_agent/
 
 # Atau jika folder Ziva AI berada di folder root proyek:
 ziva_ai/
