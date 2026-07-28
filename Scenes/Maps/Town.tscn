@@ -36,7 +36,7 @@ texture_filter = 1
 
 [node name="Doors" parent="YSort/Doors" unique_id=1604943215 instance=ExtResource("2_17q6d")]
 position = Vector2(735, 254)
-target_map = "cafe"
+target_map = "Cafe"
 target_spawn = "Entrance"
 
 [node name="SpawnPoints" type="Node2D" parent="YSort" unique_id=1275322865]

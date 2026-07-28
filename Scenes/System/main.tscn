@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://de228b2umtntk" path="res://Scenes/Maps/CurrentMap.tscn" id="1_fk50f"]
 [ext_resource type="PackedScene" uid="uid://ebwajfjk55po" path="res://Scenes/Player/Player.tscn" id="2_6d2ca"]
-[ext_resource type="Script" uid="uid://btwrawels4dtg" path="res://Scripts/Main.gd" id="3_6d2ca"]
+[ext_resource type="Script" uid="uid://dvo3kqqxjra1b" path="res://Scripts/Main.gd" id="3_6d2ca"]
 [ext_resource type="PackedScene" uid="uid://b5xas3vs36e8y" path="res://Scenes/UI/HUD.tscn" id="3_fk50f"]
 
 [node name="Main" type="Node2D" unique_id=4404013]
@@ -12,6 +12,5 @@ script = ExtResource("3_6d2ca")
 
 [node name="player" parent="." unique_id=1490220398 instance=ExtResource("2_6d2ca")]
 position = Vector2(654, 313)
-
 
 [node name="CanvasLayer" parent="." unique_id=55824810 instance=ExtResource("3_fk50f")]

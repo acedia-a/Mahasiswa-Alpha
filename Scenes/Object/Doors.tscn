@@ -3,12 +3,14 @@
 [ext_resource type="Script" uid="uid://df74jili5i2sp" path="res://Scripts/Objects/doors.gd" id="1_rwakf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2knc"]
+size = Vector2(64, 96)
 
 [node name="Doors" type="Area2D" unique_id=1604943215]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("1_rwakf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=758349965]
-scale = Vector2(5, 3)
 shape = SubResource("RectangleShape2D_f2knc")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=598462670]

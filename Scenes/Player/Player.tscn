@@ -336,6 +336,8 @@ animation = &"left_walk"
 [node name="Camera2D" type="Camera2D" parent="." unique_id=791439854]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=171017244]
+collision_layer = 0
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=475837379]
 position = Vector2(-1, 7.375)
