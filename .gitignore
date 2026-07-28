@@ -14,3 +14,14 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Mengabaikan seluruh folder Ziva AI di dalam addons/
+addons/ziva_ai/
+addons/ziva_agent/
+
+# Atau jika folder Ziva AI berada di folder root proyek:
+ziva_ai/
+
+# Jika ada file kunci/API Key atau konfigurasi khusus Ziva AI:
+*.ziva_config
+ziva_keys.json
