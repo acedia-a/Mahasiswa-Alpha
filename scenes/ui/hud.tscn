@@ -14,3 +14,12 @@ layout_mode = 2
 
 [node name="TimeLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2059525345]
 layout_mode = 2
+
+[node name="PromptLabel" type="Label" parent="." unique_id=1893201038]
+visible = false
+offset_left = 91.0
+offset_top = 122.0
+offset_right = 181.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 8
+text = "Tekan \"E\" untuk masuk"
