@@ -2,14 +2,14 @@ extends CanvasLayer
 
 @onready var time_label = $MarginContainer/VBoxContainer/TimeLabel
 
-@onready var prompt = $PromptLabel
+@onready var prompt_label = $PromptLabel
 
-func show_prompt(text := "Tekan E"):
-	prompt.text = text
-	prompt.visible = true
+func show_prompt(text: String):
+	prompt_label.text = text
+	prompt_label.visible = true
 
 func hide_prompt():
-	prompt.visible = false
+	prompt_label.visible = false
 	
 func _ready():
 

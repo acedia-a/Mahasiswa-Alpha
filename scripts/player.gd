@@ -29,10 +29,18 @@ func _ready() -> void:
 func _on_interact_area_entered(area: Area2D) -> void:
 	if area is Interactable:
 		nearby_interactables.append(area)
+		get_tree().current_scene.get_node("CanvasLayer").show_prompt(area.prompt)
 
 
 func _on_interact_area_exited(area: Area2D) -> void:
-	nearby_interactables.erase(area)
+	if area is Interactable:
+		nearby_interactables.erase(area)
+
+	if nearby_interactables.is_empty():
+		get_tree().current_scene.get_node("CanvasLayer").hide_prompt()
+	else:
+		var target = get_closest_interactable()
+		get_tree().current_scene.get_node("CanvasLayer").show_prompt(target.prompt)
 
 
 func get_closest_interactable() -> Area2D:
