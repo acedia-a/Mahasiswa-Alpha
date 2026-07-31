@@ -4,4 +4,5 @@ class_name Interactable
 @export var prompt := "Tekan [E] untuk berinteraksi"
 
 func interact():
-	pass
+	if get_parent().has_method("interact"):
+		get_parent().interact()

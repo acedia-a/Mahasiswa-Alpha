@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://dj14lt5ty6lha" path="res://Assets/new_tile_set.tres" id="1_d4fb7"]
 [ext_resource type="PackedScene" uid="uid://dhw2qnjn1242m" path="res://Scenes/Object/Doors.tscn" id="2_17q6d"]
+[ext_resource type="PackedScene" uid="uid://bid2xmgkkfwbk" path="res://Scenes/NPC/NPC.tscn" id="3_lw34u"]
 
 [node name="Town" type="Node2D" unique_id=303328582]
 position = Vector2(64, 4)
@@ -58,6 +59,9 @@ position = Vector2(202, 209)
 
 [node name="NPC" type="Node2D" parent="YSort" unique_id=493521349]
 position = Vector2(-49, 18)
+
+[node name="NPC" parent="YSort/NPC" unique_id=19127772 instance=ExtResource("3_lw34u")]
+position = Vector2(329, 229)
 
 [node name="Objects" type="Node2D" parent="YSort" unique_id=574598019]
 position = Vector2(44, 25)
