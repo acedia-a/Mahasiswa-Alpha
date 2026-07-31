@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cqtifgn8fxdxh" path="res://Scripts/NPC/npc.gd" id="1_ri8vb"]
 [ext_resource type="Texture2D" uid="uid://bhmtavve4dmko" path="res://Assets/Character/Bahar/idle.png" id="2_u4vjm"]
 [ext_resource type="Texture2D" uid="uid://dbhvee3u3xov1" path="res://Assets/Character/Bahar/walk.png" id="3_37ake"]
-[ext_resource type="Script" uid="uid://cphn0dfq4oubv" path="res://scripts/Interaction/Interactable.gd" id="4_37ake"]
+[ext_resource type="Script" uid="uid://cphn0dfq4oubv" path="res://Scripts/Interaction/Interactable.gd" id="4_37ake"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlawm"]
 atlas = ExtResource("2_u4vjm")
