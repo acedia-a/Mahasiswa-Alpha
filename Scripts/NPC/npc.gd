@@ -5,4 +5,3 @@ extends CharacterBody2D
 
 func interact():
 	print(npc_name + ": " + dialogue)
-	
