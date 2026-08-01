@@ -25,3 +25,4 @@ ziva_ai/
 # Jika ada file kunci/API Key atau konfigurasi khusus Ziva AI:
 *.ziva_config
 ziva_keys.json
+nul
