@@ -332,7 +332,7 @@ animations = [{
 size = Vector2(20, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_37ake"]
-size = Vector2(52.5, 73.14285)
+size = Vector2(25.714294, 55.714294)
 
 [node name="NPC" type="CharacterBody2D" unique_id=19127772]
 scale = Vector2(0.7, 0.7)
@@ -347,10 +347,11 @@ position = Vector2(0, 22)
 shape = SubResource("RectangleShape2D_tlawm")
 
 [node name="InteractArea" type="Area2D" parent="." unique_id=1200596959]
+collision_layer = 2
+collision_mask = 0
 script = ExtResource("4_37ake")
-prompt = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea" unique_id=1525664700]
-position = Vector2(0, 10.5714245)
-scale = Vector2(0.99999994, 0.99999994)
+position = Vector2(6.8119584e-07, 4.9999986)
+scale = Vector2(0.9999996, 0.9999996)
 shape = SubResource("RectangleShape2D_37ake")
